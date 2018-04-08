@@ -1,8 +1,8 @@
 @media screen and (max-width: 1199px) and (min-width: 768px) {
-     .setwidth {
+     setwidth {
          width: 1180px;
     }
-     .setwidth1 {
+     setwidth1 {
          width: 1140px;
     }
 }
@@ -60,10 +60,10 @@
      display: block;
 }
  .dropdown a:hover {
-     background-color: #ddd 
+    background-color: #ddd
 }
  .show {
-     display:block;
+    display:block;
 }
  .carousel-indicators li{
      background-color: #000000;
@@ -79,7 +79,17 @@
  .carousel-parent{
      border: 1px solid black;
 }
-
+ .carousel-fade .carousel-item {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     opacity: 0;
+     transition: opacity 1500ms ease;
+}
+ .carousel-fade .carousel-item.active {
+     opacity: 1;
+}
  @media only screen and (max-width: 326px) {
      .carousel-parent, .carousel-fade .carousel-inner, .carousel-fade .carousel-item{
          height: 700px;
