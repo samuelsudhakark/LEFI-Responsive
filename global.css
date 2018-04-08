@@ -1,13 +1,13 @@
 @media screen and (max-width: 1199px) and (min-width: 768px) {
-     div.setwidth {
+     .setwidth {
          width: 1180px;
     }
-     div.setwidth1 {
+     .setwidth1 {
          width: 1140px;
     }
 }
  .bck-color{
-     background-color: #eeeeee !important;
+     background-color: #eeeeee;
      padding: 5px;
 }
  .padding-0{
@@ -75,23 +75,11 @@
      padding-top: 5px;
      padding-left: 10px;
      padding-right: 10px;
-     height: 100%;
 }
  .carousel-parent{
      border: 1px solid black;
-     width: 100%;
 }
- .carousel-fade .carousel-item {
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     opacity: 0;
-     transition: opacity 1500ms ease;
-}
- .carousel-fade .carousel-item.active {
-     opacity: 1;
-}
+
  @media only screen and (max-width: 326px) {
      .carousel-parent, .carousel-fade .carousel-inner, .carousel-fade .carousel-item{
          height: 700px;
