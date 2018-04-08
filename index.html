@@ -9,51 +9,10 @@
 		<link rel="stylesheet" href="global.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
 	</head>
 	<body onresize="resize()">
-	
-	<!--Script for dropdown-->
-	<script>
-		/* When the user clicks on the button, 
-		toggle between hiding and showing the dropdown content */
-		function myFunction() {
-			document.getElementById("myDropdown").classList.toggle("show");
-		}
-
-		// Close the dropdown if the user clicks outside of it
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
-
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-			  var openDropdown = dropdowns[i];
-			  if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.remove('show');
-			  }
-			}
-		  }
-		}
-		
-		function resize(){
-			if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){											
-				if (window.matchMedia("(orientation: landscape)").matches) {
-					$('.carousel-parent').height( 511 );
-					$('.carousel-control-prev').css('top','95%');
-					$('.carousel-control-next').css('top','95%');
-				}
-				
-				if (window.matchMedia("(orientation: portrait)").matches) {
-					$('.carousel-parent').height( 458 );
-					$('.carousel-control-prev').css('top','80%');
-					$('.carousel-control-next').css('top','80%');
-				}
-			}
-		}
-	</script>
-	<!--Script for dropdown-->
 		<div class="container">
-			
 			<!--Header row-->
 			<div class="row setwidth">	
 				<div class="col-md-7 slogan-block padding-0">
