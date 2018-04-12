@@ -111,10 +111,10 @@
      text-align: center;
 }
  .carousel-control-next-icon {
-     background-image: url("Next_3.png");
+     background-image: url("../images/Next_3.png");
 }
  .carousel-control-prev-icon {
-     background-image: url("Previous_3.png");
+     background-image: url("../images/Previous_3.png");
 }
  .carousel-control-next, .carousel-control-prev {
      top: 90%;
