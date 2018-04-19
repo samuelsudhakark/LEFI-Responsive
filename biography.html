@@ -9,23 +9,17 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		
 		<style>
-			body {
-			  padding-top: 54px;
-			}
 
-			@media (min-width: 992px) {
-			  body {
-				padding-top: 56px;
-			  }
-			}
-
-			.card {
-			  height: 390px;
+			.card-title {
+			  height: 25px;
 			}
 			
-			.card img{
-				height: 195px;
-			}
+			@media only screen and (min-width: 768px)  {
+				.card-title {
+				  height: 40px;
+				}
+			}	
+			
 		</style>
 
 		<script>
@@ -127,175 +121,168 @@
 			</nav>
 		</div>
 		<!-- Page Content -->
-		<div class="container">
-			<!-- Page Features -->
-			<div class="row text-center">
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/finney.jpg" alt="A Flame of Fire - Finney's Life and Labours">
-						<div class="card-body">
-							<h6 class="card-title"><a href="AFO9400.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">A Flame of Fire - Finney's Life and Labours</a></h6>
-							<p class="card-text">Price: $1.00</p>
-						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="QQHUCDSPJXHD6">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
-						</div>
-					</div>
-				</div>
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-12">		
+					<ul id="tabsJustified" class="nav nav-tabs">
+						<li class="nav-item"><a href="" data-target="#biography" data-toggle="tab" class="nav-link active" href=".biography">Biography</a></li>
+						<li class="nav-item"><a href="" data-target="#testimony" data-toggle="tab" class="nav-link" href="#testimony">Testimony</a></li>
+						<li class="nav-item"><a href="" data-target="#teaching" data-toggle="tab" class="nav-link" href="#teaching">Teaching</a></li>
+						<li class="nav-item"><a href="" data-target="#music" data-toggle="tab" class="nav-link" href="#music">Music</a></li>
+					</ul>
+					<br>
+					<!-- Page Features -->
+					<div id="tabsJustifiedContent" class="tab-content">
+						<div id="biography" class="tab-pane fade active show">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 mb-4">
+									<div class="card">
+										<img class="card-img-top" src="images/finney.jpg" alt="A Flame of Fire - Finney's Life and Labours">
+										<div class="card-body">
+											<h6 class="card-title"><a href="AFO9400.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">A Flame of Fire - Finney's Life and Labours</a></h6>
+											<p class="card-text">Price: $1.00</p>
+										</div>
+										<div class="card-footer">
+											<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="QQHUCDSPJXHD6">
+												<input type="submit" class="btn btn-primary" value="Add to Cart" />
+											</form>
+										</div>
+									</div>
+								</div>
 
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/ndaniel.jpg" alt="Another Daniel">
-						<div class="card-body">
-							<h6 class="card-title"><a href="ADX9000.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">Another Daniel</a></h6>
-							<p class="card-text">Price: $6.99</p>
+								<div class="col-lg-3 col-md-6 mb-4">
+									<div class="card">
+										<img class="card-img-top" src="images/studd.jpg" alt="C.T. Studd- Cricketer and Pioneer">
+										<div class="card-body">
+											<h6 class="card-title"><a href="CTS6700.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">C.T. Studd- Cricketer and Pioneer</a></h6>
+											<p class="card-text">Price: $4.99</p>
+										</div>
+										<div class="card-footer">
+											<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="BKMMNCJSURBQL">
+												<input type="submit" class="btn btn-primary" value="Add to Cart" />
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="2MANBK5SWGTJ6">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
-						</div>
-					</div>
-				</div>
+						
+						<div id="testimony" class="tab-pane fade">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 mb-4">
+									<div class="card">
+										<img class="card-img-top" src="images/finney.jpg" alt="A Flame of Fire - Finney's Life and Labours">
+										<div class="card-body">
+											<h6 class="card-title"><a href="AFO9400.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">testimony - Finney's Life and Labours</a></h6>
+											<p class="card-text">Price: $1.00</p>
+										</div>
+										<div class="card-footer">
+											<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="QQHUCDSPJXHD6">
+												<input type="submit" class="btn btn-primary" value="Add to Cart" />
+											</form>
+										</div>
+									</div>
+								</div>
 
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/studd.jpg" alt="C.T. Studd- Cricketer and Pioneer">
-						<div class="card-body">
-							<h6 class="card-title"><a href="CTS6700.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">C.T. Studd- Cricketer and Pioneer</a></h6>
-							<p class="card-text">Price: $4.99</p>
+								<div class="col-lg-3 col-md-6 mb-4">
+									<div class="card">
+										<img class="card-img-top" src="images/studd.jpg" alt="C.T. Studd- Cricketer and Pioneer">
+										<div class="card-body">
+											<h6 class="card-title"><a href="CTS6700.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">C.T. Studd- Cricketer and Pioneer</a></h6>
+											<p class="card-text">Price: $4.99</p>
+										</div>
+										<div class="card-footer">
+											<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="BKMMNCJSURBQL">
+												<input type="submit" class="btn btn-primary" value="Add to Cart" />
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="BKMMNCJSURBQL">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
-						</div>
-					</div>
-				</div>
+						
+						<div id="teaching" class="tab-pane fade">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 mb-4">
+									<div class="card">
+										<img class="card-img-top" src="images/finney.jpg" alt="A Flame of Fire - Finney's Life and Labours">
+										<div class="card-body">
+											<h6 class="card-title"><a href="AFO9400.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">teaching - Finney's Life and Labours</a></h6>
+											<p class="card-text">Price: $1.00</p>
+										</div>
+										<div class="card-footer">
+											<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="QQHUCDSPJXHD6">
+												<input type="submit" class="btn btn-primary" value="Add to Cart" />
+											</form>
+										</div>
+									</div>
+								</div>
 
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/getsetgo.jpg" alt="Get Set Go">
-						<div class="card-body">
-							<h6 class="card-title"><a href="GSG8900.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">Get Set Go</a></h6>
-							<p class="card-text">Price: $6.05</p>
+								<div class="col-lg-3 col-md-6 mb-4">
+									<div class="card">
+										<img class="card-img-top" src="images/studd.jpg" alt="C.T. Studd- Cricketer and Pioneer">
+										<div class="card-body">
+											<h6 class="card-title"><a href="CTS6700.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">C.T. Studd- Cricketer and Pioneer</a></h6>
+											<p class="card-text">Price: $4.99</p>
+										</div>
+										<div class="card-footer">
+											<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="BKMMNCJSURBQL">
+												<input type="submit" class="btn btn-primary" value="Add to Cart" />
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="UF3S9CA3P5CJN">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
-						</div>
-					</div>
-				</div>
+						
+						<div id="music" class="tab-pane fade">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 mb-4">
+									<div class="card">
+										<img class="card-img-top" src="images/finney.jpg" alt="A Flame of Fire - Finney's Life and Labours">
+										<div class="card-body">
+											<h6 class="card-title"><a href="AFO9400.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">music - Finney's Life and Labours</a></h6>
+											<p class="card-text">Price: $1.00</p>
+										</div>
+										<div class="card-footer">
+											<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="QQHUCDSPJXHD6">
+												<input type="submit" class="btn btn-primary" value="Add to Cart" />
+											</form>
+										</div>
+									</div>
+								</div>
 
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/henrymartyn.jpg" alt="Henry Martyn">
-						<div class="card-body">
-							<h6 class="card-title"><a href="HMX9300.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">Henry Martyn</a></h6>
-							<p class="card-text">Price: $0.50</p>
-						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="5EF7M5MUQ3XXE">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/hudson.jpg" alt="Hudson Taylor, The Man Who Believed God">
-						<div class="card-body">
-							<h6 class="card-title"><a href="HTX9400.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">Hudson Taylor, The Man Who Believed God</a></h6>
-							<p class="card-text">Price: $5.00</p>
-						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="GXCXYBY5ZNC4N">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/inheriting2.jpg" alt="Inheriting The Promises">
-						<div class="card-body">
-							<h6 class="card-title"><a href="ITP0200.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">Inheriting The Promises</a></h6>
-							<p class="card-text">Price: $4.00</p>
-						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="MWWWKECYV6VVS">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/johnwesley.jpg" alt="John Wesley, Apostle of England">
-						<div class="card-body">
-							<h6 class="card-title"><a href="JWA9100.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">John Wesley, Apostle of England</a></h6>
-							<p class="card-text">Price: $2.50</p>
-						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="YWNPJ9C72L9ZC">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/pressing.jpg" alt="Pressing Forward">
-						<div class="card-body">
-							<h6 class="card-title"><a href="PFX9300.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">Pressing Forward</a></h6>
-							<p class="card-text">Price: $6.05</p>
-						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="S9KPXPMZW79KQ">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card">
-						<img class="card-img-top" src="images/sundarsingh.jpg" alt="Sadhu Sundar Singh - He Walked With God">
-						<div class="card-body">
-							<h6 class="card-title"><a href="SSS9600.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">Sadhu Sundar Singh - He Walked With God</a></h6>
-							<p class="card-text">Price: $3.50</p>
-						</div>
-						<div class="card-footer">
-							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="F3KN5TF2688V2">
-								<input type="submit" class="btn btn-primary" value="Add to Cart" />
-							</form>
+								<div class="col-lg-3 col-md-6 mb-4">
+									<div class="card">
+										<img class="card-img-top" src="images/studd.jpg" alt="C.T. Studd- Cricketer and Pioneer">
+										<div class="card-body">
+											<h6 class="card-title"><a href="CTS6700.html" onclick="NewWindow(this.href,'name','400','400','yes');return false;">C.T. Studd- Cricketer and Pioneer</a></h6>
+											<p class="card-text">Price: $4.99</p>
+										</div>
+										<div class="card-footer">
+											<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="BKMMNCJSURBQL">
+												<input type="submit" class="btn btn-primary" value="Add to Cart" />
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
