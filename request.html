@@ -36,7 +36,16 @@
 					}
 				  }
 				});
-			});
+				
+				/*jQuery.validator.addMethod("phone", function(value, element) {
+				  // allow any non-whitespace characters as the host part
+				  return this.optional( element ) || /^[0-9]$/.test( value );
+				}, 'Please enter a valid email address.');*/
+				
+				$.validator.addMethod("phone", function(value,element) {
+						return /^[0-9]{1,10}$/.test(value);
+					}, 'Only numbers with max upto 10 digits');
+				});
 		</script>
 	</head>
 
@@ -200,7 +209,7 @@
 				<div class="col-sm-1"></div>
 				<label for="phoneno" class="col-sm-2 col-form-label">Phone*</label>
 				<div class="col-sm-8">
-				  <input id="phoneno" type="text" name="phone" class="form-control" placeholder="Phone" required>
+				  <input id="phoneno" type="text" name="phone" class="form-control phone" placeholder="Phone" required>
 				</div>
 				<div class="col-sm-1"></div>
 			  </div>
