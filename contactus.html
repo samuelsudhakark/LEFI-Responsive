@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>Contact Us</title>
+		<link rel="icon" href="images/world1.jpg" type="image/gif" sizes="16x16">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		
+		<style>
+			@media screen and (max-width: 1199px) and (min-width: 768px) {			  
+			  div.setwidth {				
+				width: 1180px;				
+			  }
+			  div.setwidth1 {				
+				width: 1140px;					
+			  }			  
+			}
+			
+			.padding-0{
+				padding-right:4px;
+				padding-left:4px;
+			}
+
+			/* added css changes */
+
+			body{
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			p{
+				margin-bottom:0;				
+				line-height: 28px;
+				text-align:justify;	
+			}	
+			.error{
+				color: red;
+			}			
+		</style>
+		<script>
+			$(function(){
+			  $("#header").load("header.html"); 
+			  $("#footer").load("footer.html"); 
+			  
+			  $("#contactusform").validate({
+					invalidHandler: function(event, validator) {
+					// 'this' refers to the form
+					var errors = validator.numberOfInvalids();
+					if (errors) {
+					  var message = errors == 1
+						? 'You missed 1 field. It has been highlighted'
+						: 'You missed ' + errors + ' fields. They have been highlighted';
+					  $("div.error span").html(message);
+					  $("div.error").show();
+					} else {
+					  $("div.error").hide();
+					}
+				  }
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<br/><br/>	
+		
+		<div class="container padding-0">			
+			<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+			  </ol>
+			</nav>
+		</div>
+	
+		<div class="container padding-0">
+			<h3 style="text-align:center;">Contact Us</h3>
+			<p style="text-align:center;">*Please complete form below for any general inquiries, feedback, or comments</p>
+			<form id="contactusform" action="contactus.php" method="post" name="contactusform">
+			  <div class="form-group row">
+				<div class="col-sm-1"></div>
+				<label for="uname" class="col-sm-2 col-form-label">Name*</label>
+				<div class="col-sm-8">
+				  <input type="text" id="uname" class="form-control" name="name" placeholder="Name" required>
+				</div>				
+			  </div>
+			  <div class="form-group row">
+				<div class="col-sm-1"></div>
+				<label for="contactemail" class="col-sm-2 col-form-label">Email*</label>
+				<div class="col-sm-8">
+				  <input type="email" id="contactemail" class="form-control" name="email" placeholder="Email" required>
+				</div>
+				<div class="col-sm-1"></div>
+			  </div>
+			  <div class="form-group row">
+				<div class="col-sm-1"></div>
+				<label for="contactcomments" class="col-sm-2 col-form-label">Comments*</label>
+				<div class="col-sm-8">
+				  <textarea class="form-control" id="contactcomments" name="comments" rows="3" placeholder="Comments" required></textarea>
+				</div>
+				<div class="col-sm-1"></div>
+			  </div>
+			  <div style="text-align:center;" class="error"><span></span></div>
+			  <div style="text-align:center;"><button type="submit" class="btn btn-primary">Submit</button></div>
+			</form>
+		</div>
+		<div class="container">
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>
