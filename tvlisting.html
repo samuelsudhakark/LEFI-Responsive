@@ -95,6 +95,7 @@
 						$(collapseElems[i]).addClass( "show" );
 						$(collapseIcons[i]).removeClass( "collapsed" );						
 					}
+					initializeDatatable();
 				}
 				closeAllPanels = function(aId) {
 					$(aId + ' .collapse.show').collapse('hide');
