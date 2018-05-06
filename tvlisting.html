@@ -1,0 +1,590 @@
+<html>
+	<head>
+		<title>TV Stations</title>
+		<link rel="icon" href="images/world1.jpg" type="image/gif" sizes="16x16">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.bootstrap4.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--<link rel="stylesheet" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.5.0">-->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+		<script src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
+		<script src="https://cdn.datatables.net/responsive/2.2.1/js/responsive.bootstrap4.min.js"></script>		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>	
+		
+		
+		<style>
+			@media screen and (max-width: 1199px) and (min-width: 768px) {			  
+			  div.setwidth {				
+				width: 1180px;				
+			  }
+			  div.setwidth1 {				
+				width: 1140px;					
+			  }			  
+			}
+			
+			.padding-0{
+				padding-right:4px;
+				padding-left:4px;
+			}
+
+			/* added css changes */
+
+			body{
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			p{
+				margin-bottom:0;				
+				line-height: 28px;
+				text-align:justify;	
+			}			
+			.accordion .card .card-header a:not(.collapsed) .rotate-icon{
+				-webkit-transform:rotate(180deg);
+				-ms-transform:rotate(180deg);
+				transform:rotate(180deg)
+			}
+		</style>
+		<script>
+			$(function(){
+			  $("#header").load("header.html"); 
+			  $("#footer").load("footer.html"); 
+			});
+			$(document).ready(function() {
+				$('table.display').DataTable( {
+						"paging":   false,
+						"ordering": false,
+						"info":     false,
+						"filter":	false
+					});				
+			});
+			
+			function initializeDatatable(){
+				setTimeout(function(){
+					$('table.display').DataTable( {
+						"destroy": true,
+						"paging":   false,
+						"ordering": false,
+						"info":     false,
+						"filter":	false
+					});				
+				},300);
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		<div id="header"></div>
+	
+		<br/><br/>
+	
+		<div class="container padding-0">			
+			<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">TV Stations</li>
+			  </ol>
+			</nav>
+		</div>
+		
+		<div class="container padding-0">
+			<h3 style="text-align:center;">"The Lord's Challenge" TV Program Schedule</h3>
+			<div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+				<!-- Accordion card -->
+				<div class="card">
+
+					<!-- Card header -->
+					<div class="card-header" role="tab" id="headingOne">
+						<a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="initializeDatatable()">
+							<h6 class="mb-0">
+								<i class="fa fa-angle-down rotate-icon"></i> INSPIRATION TV - SATELLITE BROADCAST
+							</h6>
+						</a>
+					</div>
+
+					<!-- Card body -->
+					<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx">
+						<div class="card-body">
+							<table class="display table table-striped dt-responsive nowrap" style="width:100%; border-collapse: collapse !important">
+								<thead>
+									<tr>
+										<th>Country</th>
+										<th>Day</th>
+										<th>Schedule</th>
+										<th>Languages</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Australia</td>
+										<td>Tuesday</td>
+										<td>7:00PM AEST</td>
+										<td>English</td>										
+									</tr>
+									<tr>
+										<td>UK</td>
+										<td>Tuesday</td>
+										<td>7:00PM</td>
+										<td>English</td>										
+									</tr>
+									<tr>
+										<td>USA</td>
+										<td>Tuesday</td>
+										<td>7:00PM EST</td>
+										<td>English</td>										
+									</tr>																
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>				
+				<!-- Accordion card -->								
+				<!-- Accordion card -->
+				<div class="card">
+
+					<!-- Card header -->
+					<div class="card-header" role="tab" id="headingTwo">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="initializeDatatable()">
+							<h6 class="mb-0">
+								<i class="fa fa-angle-down rotate-icon"></i> FRANCE 
+							</h6>
+						</a>
+					</div>
+
+					<!-- Card body -->
+					<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionEx">
+						<div class="card-body">
+							<table class="display table table-striped dt-responsive nowrap" style="width:100%; border-collapse: collapse !important">
+								<thead>
+									<tr>
+										<th>Station Name</th>
+										<th>Day</th>
+										<th>Schedule</th>
+										<th>Languages</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Living God TV</td>
+										<td>Wednesday</td>
+										<td>8:30PM-9:00PM</td>
+										<td>English & Tamil</td>										
+									</tr>																									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Accordion card -->
+				<!-- Accordion card -->
+				<div class="card">
+
+					<!-- Card header -->
+					<div class="card-header" role="tab" id="headingThree">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="initializeDatatable()">
+							<h6 class="mb-0">
+								<i class="fa fa-angle-down rotate-icon"></i> GERMANY 
+							</h6>
+						</a>
+					</div>
+
+					<!-- Card body -->
+					<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionEx">
+						<div class="card-body">
+							<table class="display table table-striped dt-responsive" style="width:100%; border-collapse: collapse !important">
+								<thead>
+									<tr>
+										<th>Station Name</th>
+										<th>Day</th>
+										<th>Schedule</th>
+										<th>Languages</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>RheinMainTV Kabel Kanal S24, with German interpretation consult www.rheinmaintv.de for more options to view RheinMainTV</td>
+										<td>Sunday</td>
+										<td>11:30AM-12:00PM</td>
+										<td>English</td>										
+									</tr>																									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Accordion card -->
+				<!-- Accordion card -->
+				<div class="card">
+
+					<!-- Card header -->
+					<div class="card-header" role="tab" id="headingFour">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="initializeDatatable()">
+							<h6 class="mb-0">
+								<i class="fa fa-angle-down rotate-icon"></i> GUYANA, SOUTH AMERICA 
+							</h6>
+						</a>
+					</div>
+
+					<!-- Card body -->
+					<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordionEx">
+						<div class="card-body">
+							<table class="display table table-striped dt-responsive" style="width:100%; border-collapse: collapse !important">
+								<thead>
+									<tr>
+										<th>Station Name</th>
+										<th>Day</th>
+										<th>Schedule</th>
+										<th>Languages</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>NCN Channel 11</td>
+										<td>Sunday</td>
+										<td>8:00AM-8:30AM</td>
+										<td>English</td>										
+									</tr>																									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Accordion card -->
+				<!-- Accordion card -->
+				<div class="card">
+
+					<!-- Card header -->
+					<div class="card-header" role="tab" id="headingFive">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="initializeDatatable()">
+							<h6 class="mb-0">
+								<i class="fa fa-angle-down rotate-icon"></i> INDIA, PAKISTAN, NEPAL, BANGLADESH, SRI LANKA 
+							</h6>
+						</a>
+					</div>
+
+					<!-- Card body -->
+					<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordionEx">
+						<div class="card-body">
+							<table class="display table table-striped dt-responsive" style="width:100%; border-collapse: collapse !important">
+								<thead>
+									<tr>
+										<th>Station Name</th>
+										<th>Day</th>
+										<th>Schedule</th>
+										<th>Languages</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Vasanth T.V</td>
+										<td>Wednesday</td>
+										<td>7:30AM-8:00AM</td>
+										<td>English & Tamil</td>										
+									</tr>
+									<tr>
+										<td>Tamilan T.V</td>
+										<td>Sunday</td>
+										<td>2:15PM-3:15PM</td>
+										<td>English & Tamil</td>										
+									</tr>
+									<tr>
+										<td>Nampikkai</td>
+										<td>Sunday</td>
+										<td>2:00PM-3:00PM</td>
+										<td>English & Tamil</td>										
+									</tr>
+									<tr>
+										<td>Nampikkai</td>
+										<td>Thursday</td>
+										<td>9:30PM-10:00PM</td>
+										<td>English & Tamil</td>										
+									</tr>
+									<tr>
+										<td>Maa Movies</td>
+										<td>Sunday</td>
+										<td>6:00AM-6:30AM</td>
+										<td>English & Telugu</td>										
+									</tr>
+									<tr>
+										<td>Subhavartha</td>
+										<td>Sunday</td>
+										<td>2:00PM-3:00PM</td>
+										<td>English & Telugu</td>										
+									</tr>
+									<tr>
+										<td>Subhavartha</td>
+										<td>Thursday</td>
+										<td>8:30PM-9:00PM</td>
+										<td>English & Telugu</td>										
+									</tr>
+									<tr>
+										<td>Star Utsav TV</td>
+										<td>Sunday</td>
+										<td>7:30AM-8:00AM</td>
+										<td>English & Hindi</td>										
+									</tr>
+									<tr>
+										<td>Shubasandesh</td>
+										<td>Thursday</td>
+										<td>7:00PM-7:30PM</td>
+										<td>English & Hindi</td>										
+									</tr>
+									<tr>
+										<td>Rophe TV</td>
+										<td>Sunday</td>
+										<td>2:00PM-2:30PM</td>
+										<td>English & Konkani</td>										
+									</tr>
+									<tr>
+										<td>Rophe TV</td>
+										<td>Monday</td>
+										<td>4:00PM-4:30PM</td>
+										<td>English & Konkani</td>										
+									</tr>
+									<tr>
+										<td>Nepal 1</td>
+										<td>Friday</td>
+										<td>7:15AM-7:45AM</td>
+										<td>English & Nepali</td>										
+									</tr>
+									<tr>
+										<td>Avenues Nepali TV</td>
+										<td>Saturday</td>
+										<td>6:30AM-7:00AM</td>
+										<td>English & Nepali</td>										
+									</tr>
+									<tr>
+										<td>Pratidin Time</td>
+										<td>Sunday</td>
+										<td>7:00AM-7:30AM</td>
+										<td>English & Assamese</td>										
+									</tr>
+									<tr>
+										<td>TV-9 Maharashtra</td>
+										<td>Saturday</td>
+										<td>6:30AM-7:00AM</td>
+										<td>English & Marathi</td>										
+									</tr>
+									<tr>
+										<td>Surya TV</td>
+										<td>Saturday</td>
+										<td>6:00AM-6:30AM</td>
+										<td>English & Malayalam</td>										
+									</tr>
+									<tr>
+										<td>Udaya Movies</td>
+										<td>Sunday</td>
+										<td>6:30AM-7:00AM</td>
+										<td>English & Kannada</td>										
+									</tr>
+									<tr>
+										<td>Aakash Aath</td>
+										<td>Saturday</td>
+										<td>6:15AM-6:45AM</td>
+										<td>English & Bengali</td>										
+									</tr>
+									<tr>
+										<td>ZEE Punjabi TV</td>
+										<td>Sunday</td>
+										<td>12:30PM-1:00PM</td>
+										<td>English & Punjabi</td>										
+									</tr>
+									<tr>
+										<td>TV9 Gujarati</td>
+										<td>Saturday</td>
+										<td>6:30AM-7:00AM</td>
+										<td>English & Gujarati</td>										
+									</tr>
+									<tr>
+										<td>MBC TV</td>
+										<td>Sunday</td>
+										<td>11:30AM-12:00PM</td>
+										<td>English & Odiya</td>										
+									</tr>
+									<tr>
+										<td>DD(Imphal, Manipur)</td>
+										<td>Sunday</td>
+										<td>7:00PM-7:30PM</td>
+										<td>English & Manipuri</td>										
+									</tr>
+									<tr>
+										<td>IS TV(Imphal, Manipur)</td>
+										<td>Sunday</td>
+										<td>6:00PM-6:30PM</td>
+										<td>English & Manipuri</td>										
+									</tr>
+									<tr>
+										<td>LPS, Zonet, SKYLINK (Mizoram)</td>
+										<td>Sunday</td>
+										<td>7:30AM-8:00AM</td>
+										<td>English & Mizo</td>										
+									</tr>
+									<tr>
+										<td>DD(Kohima, Nagaland)</td>
+										<td>Sunday</td>
+										<td>6:00PM-6:30PM</td>
+										<td>English & Nagamese</td>										
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Accordion card -->
+				<!-- Accordion card -->
+				<div class="card">
+
+					<!-- Card header -->
+					<div class="card-header" role="tab" id="headingSix">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" onclick="initializeDatatable()">
+							<h6 class="mb-0">
+								<i class="fa fa-angle-down rotate-icon"></i> TRINIDAD, SOUTH AMERICA
+							</h6>
+						</a>
+					</div>
+
+					<!-- Card body -->
+					<div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordionEx">
+						<div class="card-body">
+							<table class="display table table-striped dt-responsive" style="width:100%; border-collapse: collapse !important">
+								<thead>
+									<tr>
+										<th>Station Name</th>
+										<th>Day</th>
+										<th>Schedule</th>
+										<th>Languages</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>CNC3</td>
+										<td>1st & 3rd Saturday</td>
+										<td>8:00AM-8:30AM</td>
+										<td>English</td>										
+									</tr>																									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Accordion card -->
+				<!-- Accordion card -->
+				<div class="card">
+
+					<!-- Card header -->
+					<div class="card-header" role="tab" id="headingSeven">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" onclick="initializeDatatable()">
+							<h6 class="mb-0">
+								<i class="fa fa-angle-down rotate-icon"></i> UNITED KINGDOM
+							</h6>
+						</a>
+					</div>
+
+					<!-- Card body -->
+					<div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordionEx">
+						<div class="card-body">
+							<table class="display table table-striped dt-responsive" style="width:100%; border-collapse: collapse !important">
+								<thead>
+									<tr>
+										<th>Station Name</th>
+										<th>Day</th>
+										<th>Schedule</th>
+										<th>Languages</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Revelation TV Sky 581, [also on Freesat 692 and Freeview HD 250]</td>
+										<td>Tuesday</td>
+										<td>8:30PM-9:00PM</td>
+										<td>English</td>										
+									</tr>
+									<tr>
+										<td>CBSReality TV Sky 146, [also on Virgin Media 148, Freeview 66 and Freesat 135]</td>
+										<td>Sunday</td>
+										<td>8:30AM-9:00AM</td>
+										<td>English</td>										
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Accordion card -->
+				<!-- Accordion card -->
+				<div class="card">
+
+					<!-- Card header -->
+					<div class="card-header" role="tab" id="headingEight">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" onclick="initializeDatatable()">
+							<h6 class="mb-0">
+								<i class="fa fa-angle-down rotate-icon"></i> UNITED STATES OF AMERICA
+							</h6>
+						</a>
+					</div>
+
+					<!-- Card body -->
+					<div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordionEx">
+						<div class="card-body">
+							<table class="display table table-striped dt-responsive" style="width:100%; border-collapse: collapse !important">
+								<thead>
+									<tr>
+										<th>Station Name</th>
+										<th>Day</th>
+										<th>Schedule</th>
+										<th>Languages</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Brighthouse Cable-INFO TV-12 Southeast Michigan</td>
+										<td>Sunday</td>
+										<td>8:00AM-8:30AM</td>
+										<td>English</td>										
+									</tr>
+									<tr>
+										<td>Brighthouse Cable-INFO TV-12 Southeast Michigan</td>
+										<td>Wednesday</td>
+										<td>4:30AM-5:00AM</td>
+										<td>English</td>										
+									</tr>
+									<tr>
+										<td>Brighthouse Cable-INFO TV-12 Southeast Michigan</td>
+										<td>Thursday</td>
+										<td>9:30AM-10:00AM</td>
+										<td>English</td>										
+									</tr>
+									<tr>
+										<td>Brighthouse Cable-INFO TV-12 Southeast Michigan</td>
+										<td>Saturday</td>
+										<td>6:30AM-7:00AM</td>
+										<td>English</td>										
+									</tr>
+									<tr>
+										<td>Time Warner Cable-24 Los Angeles</td>
+										<td>Sunday</td>
+										<td>8:00AM-8:30AM</td>
+										<td>English</td>										
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Accordion card -->
+			</div>
+			<!--/.Accordion wrapper-->			
+		</div>	
+		<div class="container">
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>
